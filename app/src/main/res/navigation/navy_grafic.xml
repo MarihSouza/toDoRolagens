@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navy_grafic"
+    app:startDestination="@id/listaDeTarefas">
+
+    <fragment
+        android:id="@+id/listaDeTarefas"
+        android:name="com.example.todorolagem.listaDeTarefas"
+        android:label="fragment_lista_de_tarefas"
+        tools:layout="@layout/fragment_lista_de_tarefas" />
+</navigation>

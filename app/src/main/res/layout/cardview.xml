@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#FFFFFF"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nomeTarefa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="@string/nome_da_tarefa"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            tools:text="Descrição" />
+
+        <TextView
+            android:id="@+id/responsavel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            tools:text="Responsavel" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            tools:text="Data" />
+
+        <Switch
+            android:id="@+id/andamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="Em andamento"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            tools:text="Categoria" />
+
+        <Button
+            android:id="@+id/deletarTarefa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:backgroundTint="#E91E63"
+            android:text="Deletar tarefa"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            app:iconTint="#FFFFFF" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
